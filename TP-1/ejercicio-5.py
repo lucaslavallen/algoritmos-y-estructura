@@ -9,5 +9,3 @@ def romano_a_decimal(romano):
     else:
         return romanos[romano[0]] + romano_a_decimal(romano[1:])
 
-numero_romano = "MCMLXXIV" 
-print("Número decimal correspondiente a", numero_romano, "es:", romano_a_decimal(numero_romano))
