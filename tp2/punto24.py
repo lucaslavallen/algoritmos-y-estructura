@@ -85,7 +85,7 @@ def personajes_con_letras_C_D_G(pila):
 
     return personajes
 
-# Ejemplo de uso
+
 pila_personajes = Pila()
 pila_personajes.apilar({'nombre': 'Iron Man', 'peliculas': 10})
 pila_personajes.apilar({'nombre': 'Captain America', 'peliculas': 9})
@@ -95,18 +95,20 @@ pila_personajes.apilar({'nombre': 'Hulk', 'peliculas': 6})
 pila_personajes.apilar({'nombre': 'Rocket Raccoon', 'peliculas': 4})
 pila_personajes.apilar({'nombre': 'Groot', 'peliculas': 3})
 
-# a. determinar en qué posición se encuentran Rocket Raccoon y Groot
 posiciones = posicion_personajes(pila_personajes, ['Rocket Raccoon', 'Groot'])
 print("Posiciones de Rocket Raccoon y Groot:", posiciones)
 
-# b. determinar los personajes que participaron en más de 5 películas
+
 personajes_mas_5 = personajes_mas_de_5_peliculas(pila_personajes)
 print("Personajes con más de 5 películas:", personajes_mas_5)
 
-# c. determinar en cuantas películas participo la Viuda Negra (Black Widow)
+
 peliculas_black_widow = peliculas_viuda_negra(pila_personajes)
 print("Películas de Black Widow:", peliculas_black_widow)
 
-# d. mostrar todos los personajes cuyos nombre empiezan con C, D y G
+
 personajes_letras_CDG = personajes_con_letras_C_D_G(pila_personajes)
 print("Personajes cuyos nombres empiezan con C, D o G:", personajes_letras_CDG)
+
+
+
